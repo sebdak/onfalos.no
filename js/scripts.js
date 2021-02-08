@@ -48,7 +48,7 @@ customElements.define(
       <style>
         a {
           display: inline-block;
-          border-radius: 5px;
+          border-radius: var(--border-radius);
           text-decoration: none;
           width: auto;
           position: relative;

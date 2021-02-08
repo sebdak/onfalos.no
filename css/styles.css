@@ -16,7 +16,7 @@
   --typeface-sans-serif: "Open Sans", -apple-system, Arial, sans-serif;
 
   /* BREAKPOINT */
-  --screen-size-mobile: 700px;
+  --screen-size-mobile: 800px;
 
   /* OTHER */
   --border-radius: 4px;
@@ -185,10 +185,6 @@ h2 {
   font-size: var(--font-size-heading-medium);
 }
 
-/***************/
-/* SECTIONS    */
-/***************/
-
 header,
 section {
   /* padding: 5rem 10rem; */
@@ -204,11 +200,14 @@ section:nth-child(even) {
   background-color: var(--color-background-alternate);
 }
 
+/***************/
+/* SECTIONS    */
+/***************/
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: auto 10rem;
 }
 
 .header__logo {
@@ -392,4 +391,16 @@ section:nth-child(even) {
 
 .dimensions__table td:first-child {
   font-weight: bold;
+}
+
+@media only screen and (max-width: var(--screen-size-mobile)) {
+  body {
+    /* font-size: 1.5rem; */
+  }
+
+  header,
+  section,
+  .header {
+    padding: 3rem 2rem;
+  }
 }
