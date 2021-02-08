@@ -169,6 +169,7 @@ body {
   font-family: var(--typeface-sans-serif);
   font-size: var(--font-size);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1,
@@ -190,7 +191,8 @@ h2 {
 
 header,
 section {
-  padding: 10rem;
+  /* padding: 5rem 10rem; */
+  padding: 5rem 3rem;
 }
 
 footer {
@@ -204,19 +206,75 @@ section:nth-child(even) {
 
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: auto 10rem;
 }
 
+.header__logo {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content__bbq {
+  max-width: 20rem;
+}
+
+.header-content__text p {
+  margin-bottom: 2rem;
+}
+
 .section-recommendations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendation-text {
+  text-align: end;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  max-width: 25rem;
+  border-right: 3px solid var(--color-highlight);
+}
+
+.recommendation-text__quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.recommendation-text__author {
+  font-weight: bold;
+}
+
+.recommendation-text__author-description {
+  font-weight: lighter;
+}
+
+.recommendation-img {
+  max-width: 11rem;
 }
 
 .section-selling-points {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 .selling-point {
   text-align: center;
+  padding: 2rem;
+  min-width: 15rem;
+  max-width: 25rem;
 }
 
 .selling-point__title::after {
@@ -232,11 +290,69 @@ section:nth-child(even) {
   text-align: center;
 }
 
+.section-video__title {
+  margin-bottom: 3rem;
+}
+
 .tips-container {
   display: flex;
 }
 
+.section-tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-tips__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-tips__title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.2rem;
+  margin: 1rem auto;
+  background-color: var(--color-highlight);
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50rem;
+}
+
+.tip-article:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 .section-accessories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-accessories__title {
+  margin-bottom: 3rem;
+}
+
+.section-accessories__title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.2rem;
+  margin: 1rem auto;
+  background-color: var(--color-highlight);
+}
+
+.accessories {
+  max-width: 50rem;
+}
+
+.accessory:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .section-contact {
