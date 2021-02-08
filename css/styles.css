@@ -1,0 +1,222 @@
+:root {
+  /* COLOR */
+  --color-text: #363636;
+  --color-background: #ffffff;
+  --color-background-alternate: #f4f4f4;
+  --color-highlight: #bc377d;
+
+  /* TYPOGRAPHY */
+  --font-size: 16px;
+  --font-size-heading-large: 4rem;
+  --font-size-heading-medium: 2rem;
+  --font-size-paragraph: 1.2rem;
+  --typeface-serif: "Playfair Display", Georgia, Times, serif;
+  --typeface-sans-serif: "Open Sans", -apple-system, Arial, sans-serif;
+
+  /* BREAKPOINT */
+  --screen-size-mobile: 700px;
+
+  /* OTHER */
+  --border-radius: 4px;
+  --global-trasition: all 0.2s ease-in-out;
+  --intro-transition: intro 0.3s both;
+}
+
+/***************/
+/* MEYER RESET */
+/***************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***************/
+/* BASE        */
+/***************/
+
+html {
+  /* sticky footer fix */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: var(--typeface-sans-serif);
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: var(--typeface-serif);
+}
+
+h1 {
+  font-size: var(--font-size-heading-large);
+}
+
+h2 {
+  font-size: var(--font-size-heading-medium);
+}
