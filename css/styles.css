@@ -9,6 +9,7 @@
   --font-size: 16px;
   --font-size-heading-large: 4rem;
   --font-size-heading-medium: 2rem;
+  --font-size-heading-small: 1.5rem;
   --font-size-paragraph: 1.2rem;
   --typeface-serif: "Playfair Display", Georgia, Times, serif;
   --typeface-sans-serif: "Open Sans", -apple-system, Arial, sans-serif;
@@ -115,21 +116,6 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
 body {
   line-height: 1;
 }
@@ -219,4 +205,98 @@ h1 {
 
 h2 {
   font-size: var(--font-size-heading-medium);
+}
+
+/***************/
+/* SECTIONS    */
+/***************/
+
+header,
+section {
+  padding: 10rem;
+}
+
+footer {
+  /* padding: auto 0; */
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background-color: var(--color-background-alternate);
+}
+
+.header {
+  display: flex;
+  padding: auto 10rem;
+}
+
+.section-recommendations {
+}
+
+.section-selling-points {
+  display: flex;
+  flex-direction: row;
+}
+
+.selling-point {
+  text-align: center;
+}
+
+.selling-point__title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: 1rem auto;
+  background-color: var(--color-highlight);
+}
+
+.section-video {
+  text-align: center;
+}
+
+.tips-container {
+  display: flex;
+}
+
+.section-accessories {
+}
+
+.section-contact {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header__title .subheading {
+  display: block;
+  font-size: var(--font-size-heading-small);
+  font-family: var(--typeface-sans-serif);
+  font-weight: lighter;
+}
+
+.dimensions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dimensions__table {
+  padding: 2rem;
+  background-color: var(--color-background-alternate);
+}
+
+.dimensions__table th {
+  padding: 1rem;
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
+.dimensions__table td {
+  padding: 1rem;
+}
+
+.dimensions__table td:first-child {
+  font-weight: bold;
 }
