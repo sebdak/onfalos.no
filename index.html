@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <script src="js/scripts.js" async></script>
   </head>
 
   <body>
@@ -113,14 +114,15 @@
     <section class="section-video">
       <h1 class="section-video__title">See the power of Onfalos</h1>
 
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/n0VwNuS2h1w?controls=0"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div class="auto-resizable-iframe">
+        <div>
+          <iframe
+            frameborder="0"
+            allowfullscreen=""
+            src="https://www.youtube.com/embed/n0VwNuS2h1w?controls=0"
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <section class="section-tips">
@@ -128,10 +130,14 @@
 
       <div class="tips-container">
         <div class="gallery">
-          <img class="gallery__img" src="" alt="Grønnsaker" />
-          <img class="gallery__img" src="" alt="Fisk" />
-          <img class="gallery__img" src="" alt="Koking" />
-          <img class="gallery__img" src="" alt="Biff" />
+          <img
+            class="gallery__img"
+            src="/assets/webp/vegies.webp"
+            alt="Grønnsaker"
+          />
+          <img class="gallery__img" src="/assets/webp/fish.webp" alt="Fisk" />
+          <img class="gallery__img" src="/assets/webp/boil.webp" alt="Koking" />
+          <img class="gallery__img" src="/assets/webp/meat.webp" alt="Biff" />
         </div>
 
         <div class="tips-container__articles">
@@ -194,8 +200,8 @@
       <h1 class="section-accessories__title">Tilbehør</h1>
 
       <div class="accessories">
-        <article class="accessory">
-          <fade-in>
+        <article>
+          <fade-in class="accessory">
             <div class="accessory__text">
               <h2 class="accessory__title">Klype, stekespade og skrape</h2>
 
@@ -208,14 +214,14 @@
 
             <img
               class="accessory__img"
-              src=""
+              src="/assets/webp/tools.webp"
               alt="Klype, stekespade og skrape"
             />
           </fade-in>
         </article>
 
-        <article class="accessory">
-          <fade-in>
+        <article>
+          <fade-in class="accessory">
             <div class="accessory__text">
               <h2 class="accessory__title">Bordplater</h2>
 
@@ -225,7 +231,11 @@
                 plate veier ca 4 kg (medium).
               </p>
             </div>
-            <img class="accessory__img" src="" alt="Bordplater" />
+            <img
+              class="accessory__img"
+              src="/assets/webp/plates.webp"
+              alt="Bordplater"
+            />
           </fade-in>
         </article>
       </div>
@@ -241,7 +251,7 @@
         <span class="email__label">epost:</span> kontakt.onfalos@gmail.com
       </p>
 
-      <shiny-a>send oss en email</shiny-a>
+      <shiny-a class="email-link">send oss en email</shiny-a>
 
       <div class="social-links">
         <a class="social-links" href="">
@@ -285,16 +295,13 @@
             </tr>
           </tbody>
         </table>
-
-        <p>
-          Onfalos produseres av Smartech, Italia. Formidles i Norden av Onfalos
-          Norge.
-        </p>
       </div>
+      <p>
+        Onfalos produseres av Smartech, Italia. Formidles i Norden av Onfalos
+        Norge.
+      </p>
     </section>
 
     <footer>copyright 2021 © Onfalos Norge</footer>
-
-    <script src="js/scripts.js"></script>
   </body>
 </html>
