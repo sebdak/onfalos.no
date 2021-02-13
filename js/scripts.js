@@ -11,7 +11,10 @@ customElements.define(
           display: block;
           opacity: 0;
           transform: translateY(10px);
-          transition: all 0.5s ease-in 0.3s;
+          transition-property: opacity, transform;
+          transition-duration: 0.5s;
+          transition-delay: 0.3s;
+          transition-timing-function: ease-in;
         }
         :host(.build-in-animate) { 
           opacity: 1;
