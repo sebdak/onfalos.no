@@ -234,6 +234,9 @@ section:nth-child(even) {
   margin-bottom: 2rem;
 }
 
+/***************/
+/* RECOMMENDATIONS        */
+/***************/
 .section-recommendations {
   display: flex;
   flex-wrap: wrap;
@@ -269,6 +272,10 @@ section:nth-child(even) {
   max-width: 10rem;
 }
 
+/***************/
+/* SELLING-POINTS        */
+/***************/
+
 .section-selling-points {
   display: flex;
   flex-wrap: wrap;
@@ -292,6 +299,9 @@ section:nth-child(even) {
   background-color: var(--color-highlight);
 }
 
+/***************/
+/* VIDEO        */
+/***************/
 .section-video {
   text-align: center;
 }
@@ -318,6 +328,10 @@ section:nth-child(even) {
   width: 100%;
   height: 100%;
 }
+
+/***************/
+/* TIPS        */
+/***************/
 
 .tips-container {
   display: flex;
@@ -368,6 +382,10 @@ section:nth-child(even) {
   margin-bottom: 2rem;
 }
 
+/***************/
+/* ACCESSORIES */
+/***************/
+
 .section-accessories {
   display: flex;
   flex-direction: column;
@@ -410,6 +428,26 @@ section:nth-child(even) {
   width: 40%;
   max-width: 20rem;
 }
+
+/***************/
+/* LINKS        */
+/***************/
+
+.section-links {
+  text-align: center;
+}
+
+.external-links__title {
+  margin-bottom: 2rem;
+}
+
+.external-links__list li {
+  margin-bottom: 0.5rem;
+}
+
+/***************/
+/* CONTACT        */
+/***************/
 
 .section-contact {
   /* text-align: center; */
@@ -461,7 +499,7 @@ section:nth-child(even) {
 
 .dimensions__table {
   padding: 1rem;
-  background-color: var(--color-background-alternate);
+  background-color: var(--color-background);
 }
 
 .dimensions__table th {
@@ -476,18 +514,6 @@ section:nth-child(even) {
 
 .dimensions__table td:first-child {
   font-weight: bold;
-}
-
-.external-links {
-  margin-bottom: 3rem;
-}
-
-.external-links__title {
-  margin-bottom: 1rem;
-}
-
-.external-links__list li {
-  margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 800px) {
