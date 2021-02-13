@@ -216,6 +216,7 @@ section:nth-child(even) {
 .header__logo {
   width: 12rem;
   margin-bottom: 3rem;
+  transform: translateX(20px);
 }
 
 .header-content {
