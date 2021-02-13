@@ -168,6 +168,14 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: var(--color-highlight);
+}
+
+a:hover {
+  color: var(--color-highlight-hover);
+}
+
 h1,
 h2 {
   font-family: var(--typeface-serif);
@@ -183,13 +191,11 @@ h2 {
 
 header,
 section {
-  /* padding: 5rem 10rem; */
   padding: 5rem 3rem;
   overflow-x: hidden;
 }
 
 footer {
-  /* padding: auto 0; */
   text-align: center;
 }
 
@@ -415,7 +421,7 @@ section:nth-child(even) {
 
 .contact-header__title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .contact-header__title .subheading {
@@ -426,15 +432,15 @@ section:nth-child(even) {
 }
 
 .email {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .email-link {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .social-links {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .social-links__link {
@@ -446,7 +452,7 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .dimensions__title {
@@ -472,15 +478,23 @@ section:nth-child(even) {
   font-weight: bold;
 }
 
+.external-links {
+  margin-bottom: 3rem;
+}
+
+.external-links__title {
+  margin-bottom: 1rem;
+}
+
+.external-links__list li {
+  margin-bottom: 0.5rem;
+}
+
 @media only screen and (max-width: 800px) {
   :root {
     --font-size-heading-large: 2rem;
     --font-size-heading-medium: 1.8rem;
     --font-size-heading-small: 1.2rem;
-  }
-
-  body {
-    /* font-size: 1.5rem; */
   }
 
   header,
